@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;;;;;;AAWA,SAAU;EACR,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,UAAU;EACnB,aAAa,EC+CL,iBAAiB;;;;AD5C3B,eAAgB;EACd,OAAO,EAAE,UAAU",
+"sources": ["../../sass/layouts/responsive-sidebars.scss","../../sass/_base.scss"],
+"names": [],
+"file": "responsive-sidebars.css"
+}
