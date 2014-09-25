@@ -1050,6 +1050,7 @@ function menu_tree_output($tree) {
     // Set a class if the link is in the active trail.
     if ($data['link']['in_active_trail']) {
       $class[] = 'active-trail';
+      $class[] = 'active';
       $data['link']['localized_options']['attributes']['class'][] = 'active-trail';
     }
     // Normally, l() compares the href of every link with $_GET['q'] and sets

@@ -83,9 +83,9 @@ function zen_breadcrumb($variables) {
       }
 
       // Build the breadcrumb trail.
-      $output = '<nav class="breadcrumb" role="navigation">';
+      $output = '<nav class="breadcrumb-container" role="navigation">';
       $output .= '<h2' . drupal_attributes($variables['title_attributes_array']) . '>' . $variables['title'] . '</h2>';
-      $output .= '<ol><li>' . implode($breadcrumb_separator . '</li><li>', $breadcrumb) . $trailing_separator . '</li></ol>';
+      $output .= '<ol class="breadcrumb"><li>' . implode($breadcrumb_separator . '</li><li>', $breadcrumb) . $trailing_separator . '</li></ol>';
       $output .= '</nav>';
     }
   }

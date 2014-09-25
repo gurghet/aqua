@@ -1,0 +1,46 @@
+@import "bootstrap-compass";
+@import "bootstrap-variables";
+@import "bootstrap";
+
+/*
+ * normalize.css specific overrides
+ *
+ * Adding changes here, as opposed to in normalize.css, allows
+ * normalize.css to be easily updated or swapped if necessary.
+ */
+
+button,
+input,
+select,
+textarea {
+  @extend .form-control;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  //@extend .btn
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+}
+
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+}
+
+fieldset {
+  margin: 20px 2px;
+  border-color: #dfdfdf;
+}
+
+fieldset legend {
+  font-weight: bold;
+}
+

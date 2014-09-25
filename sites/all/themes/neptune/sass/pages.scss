@@ -89,7 +89,7 @@ a:hover {
 #header {
   overflow: hidden;
   padding: 0 0 40px 0;
-  text-align: center;
+  text-align: left;
   .block-title, label, form li.last {
     display: none;
   }
@@ -105,11 +105,7 @@ a:hover {
 }
 
 #block-block-1 { // cart link
-  width: 250px;
   height: 40px;
-  background-image: url("http://placehold.it/40x40");
-  background-repeat: no-repeat;
-  text-indent: 50px;
   p {
     padding: 0px;
     margin: 0px;
@@ -141,9 +137,17 @@ a:hover {
  * Content
  */
 
+#main {
+  position: relative;
+}
+
 #content {
-  padding: 40px 0;
+  top: 40px;
   border-bottom: $divider;
+}
+
+#page-title {
+  display: none;
 }
 
 .region-highlighted {
@@ -154,8 +158,10 @@ a:hover {
 
 .breadcrumb { /* The path to the current page in the form of a list of links */
   padding: 40px 0;
-  border-bottom: $divider;
-  ol {
+  position: absolute;
+  top: 0px;
+  //border-bottom: $divider;
+  /*ol {
     margin: 0;
     padding: 0;
   }
@@ -164,7 +170,7 @@ a:hover {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
+  }*/
 }
 
 h1.title, /* The title of the page */
@@ -433,61 +439,6 @@ span.field-label { /* The inline field label used by the Fences module */
 }
 
 /*
- * normalize.css specific overrides
- *
- * Adding changes here, as opposed to in normalize.css, allows
- * normalize.css to be easily updated or swapped if necessary.
- */
-
-button,
-input,
-select,
-textarea {
-  color: #3f3f3f;
-}
-
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  font-family: $base-font-family;
-  color: #fff;
-  margin: 0 5px 0 0;
-  padding: 6px 12px;
-  border-radius: 4px;
-  border: none;
-  background: #51acd2;
-}
-
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-  background: #2e2e2e;
-}
-
-button:active,
-input[type="button"]:active,
-input[type="reset"]:active,
-input[type="submit"]:active {
-  background: #222;
-}
-
-fieldset {
-  margin: 20px 2px;
-  border-color: #dfdfdf;
-}
-
-fieldset legend {
-  font-weight: bold;
-}
-
-input.form-text { /* Make text fields responsive */
-  width: 100%;
-  @include box-sizing(border-box);
-}
-
-/*
  * Media queries
  */
 
@@ -501,55 +452,68 @@ input.form-text { /* Make text fields responsive */
   }
   #header {
     padding: 20px 0 60px 0;
+    .form-item {
+      padding: 0px;
+      margin: 4px !important;
+      width: 130px;
+      float: left;
+    }
+    .form-actions {
+      float: left;
+      margin: 4px;
+      width: 70px;
+      .form-submit {
+        margin: 0px;
+      }
+    }
   }
   #logo {
     float: left;
-    display: block;
     margin: 10px;
   }
   #block-block-1 {
-    float: left;
-    display: inline-block;
     margin: 5px;
+    text-indent: 50px;
+    background-image: url("http://aqua-c9-gurghet_1.c9.io/sites/default/files/corzina_03.png");
+    background-repeat: no-repeat;
+    background-position: 220px;
   }
   #block-user-login {
-    display: inline-block;
-    float: left;
-    width: 500px;
     margin: 5px;
+    height: 40px;
     form {
       position: relative;
     }
     .item-list {
       position: absolute;
-      top: -64px;
-      right: 40px;
-      .ul {
+      top: -56px;
+      left: 400px;
+      ul {
         list-style-type: none;
       }
     }
-    .form-item {
-      padding: 0px;
-      margin: 0px !important;
-      width: 27%;
-      float: left;
-    }
-    .form-actions {
-      margin: 0px;
-    }
   }
   #block-system-main-menu {
-    display: inline-block;
     margin: 5px;
-    width: 500px;
+    height: 40px;
     text-align: left;
+    font-size: 12pt;
     ul.menu {
       margin: 0px;
+      li {
+        margin: 5px;
+      }
     }
   }
   #block-search-form {
-    input {
-      width: 600px;
+    height: 40px;
+    margin: 5px;
+    form {
+      width: 650px;
+      margin: 0 auto;
+      .form-item {
+        width: 560px;
+      }
     }
   }
   #content {

@@ -11,23 +11,14 @@
  */
 
 ul li.expanded {
-  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-    *list-style-image: url(../images/menu-expanded.png);
-  }
   list-style-image: inline-image("menu-expanded.png");
   list-style-type: circle;
 }
 ul li.collapsed {
-  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-    *list-style-image: url(../images/menu-collapsed.png); /* LTR */
-  }
   list-style-image: inline-image("menu-collapsed.png"); /* LTR */
   list-style-type: disc;
 }
 ul li.leaf {
-  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-    *list-style-image: url(../images/menu-leaf.png);
-  }
   list-style-image: inline-image("menu-leaf.png");
   list-style-type: square;
 }
@@ -142,6 +133,32 @@ li a.active {
   }
   #block-system-main-menu li ul {
     float: left;
+  }
+  
+  /* The catalogue block */
+  #block-menu-menu-catalogue {
+    position: relative;
+    padding-bottom: 45px;
+    ul {
+      text-align: center;
+    }
+    li {
+      display: inline-block;
+      float: none;
+      font-size: large;
+      font-weight: 700;
+      position: static;
+      ul {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        li {
+          font-size: medium;
+          font-weight: 400;
+        }
+      }
+    }
   }
 }
 

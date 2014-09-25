@@ -20,6 +20,9 @@ Drupal.behaviors.tri = {
 
       // Retrieve window width.
       var ww = $(window).width();
+      // Style the menu
+      $('#block-menu-menu-catalogue ul').addClass('nav');
+      $('#block-menu-menu-catalogue ul').addClass('nav-pills');
 
       // draw().
       function draw() {
@@ -97,7 +100,7 @@ Drupal.behaviors.nav = {
       if ($.trim($(this).html()).length) {
         $(this).addClass('has-content');
       }
-
+      
       // miniNav().
       function miniNav() {
 
