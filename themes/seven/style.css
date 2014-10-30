@@ -702,6 +702,9 @@ select.form-select {
   background: #fff;
   color: #333;
 }
+.form-item-field-category-und select.form-select {
+   height: 290px;
+}
 input.form-text:focus,
 input.form-file:focus,
 textarea.form-textarea:focus,
@@ -992,4 +995,36 @@ div.add-or-remove-shortcuts {
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   border-radius: 8px;
+}
+
+/* HACK
+    questi stili sono per neptune ma nel wysiwyg non compaiono
+    */
+    
+.dim-title {
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  display: inline-block;
+  margin-left: 29px;
+  color: darkviolet;
+  margin-top: 15px;
+}
+
+.dim-body {
+  font-family: sans-serif;
+  font-size: 1.3em;
+  font-stretch: condensed;
+  font-weight: 300;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.dim-body-mini {
+  font-family: sans-serif;
+  font-size: 1em;
+  font-stretch: condensed;
+  font-weight: 300;
+  display: inline-block;
+  margin-left: 20px;
 }

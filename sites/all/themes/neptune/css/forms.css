@@ -56,8 +56,6 @@
 /* line 56, ../sass/forms.scss */
 a.button {
   /* Buttons used by contrib modules like Media */
-  -moz-appearance: button;
-  -webkit-appearance: button;
 }
 
 /*

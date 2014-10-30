@@ -61,6 +61,11 @@ $indent-amount: 30px;
 // A one pixel line used in a number of places throughout Neptune.
 $divider: 1px solid #dfdfdf;
 
+// Colors
+$body-color: #3f3f3f;
+$viola: #7571af;
+$titolo-color: $viola;
+$testo-color: darken($viola, 8%);
 
 //
 // Partials to be shared with all .scss files.

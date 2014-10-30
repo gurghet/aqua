@@ -148,6 +148,13 @@ li a.active {
       font-size: large;
       font-weight: 700;
       position: static;
+      .active-trail {
+        background-color: $titolo-color;
+        border-radius: 4px;
+      }
+      a.active-trail {
+        color: white;
+      }
       ul {
         position: absolute;
         bottom: 0px;
@@ -179,4 +186,12 @@ li a.active {
     background-image: url(../images/icon-menu-2x.png);
     background-size: 16px 16px;
   }
+}
+
+/*
+ * Media queries
+ */
+
+@media all and (min-width: 768px) {
+  
 }

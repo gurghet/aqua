@@ -14,7 +14,8 @@
                     "command": "",
                     "name": "Apache & PHP",
                     "default": true,
-                    "debug": true
+                    "debug": true,
+                    "env": {}
                 }
             },
             "@inited": "true"

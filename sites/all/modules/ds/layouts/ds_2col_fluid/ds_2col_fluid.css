@@ -5,12 +5,12 @@
 
 .ds-2col-fluid > .group-left {
   float: left; /* LTR */
-  width: 50%;
+  width: 35%;
 }
 
 .ds-2col-fluid > .group-right {
   float: right; /* LTR */
-  width: 50%;
+  width: 55%;
 }
 
 .ds-2col-fluid.group-one-column > .group-left,

@@ -179,13 +179,22 @@ li a.active {
     position: static;
   }
   /* line 151, ../sass/navigation.scss */
+  #block-menu-menu-catalogue li .active-trail {
+    background-color: #7571af;
+    border-radius: 4px;
+  }
+  /* line 155, ../sass/navigation.scss */
+  #block-menu-menu-catalogue li a.active-trail {
+    color: white;
+  }
+  /* line 158, ../sass/navigation.scss */
   #block-menu-menu-catalogue li ul {
     position: absolute;
     bottom: 0px;
     left: 0px;
     width: 100%;
   }
-  /* line 156, ../sass/navigation.scss */
+  /* line 163, ../sass/navigation.scss */
   #block-menu-menu-catalogue li ul li {
     font-size: medium;
     font-weight: 400;
@@ -194,7 +203,7 @@ li a.active {
 /*
  * #nav-togg (created by script.js)
  */
-/* line 169, ../sass/navigation.scss */
+/* line 176, ../sass/navigation.scss */
 #nav-togg {
   clear: left;
   display: block;
@@ -204,11 +213,14 @@ li a.active {
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 178, ../sass/navigation.scss */
+  /* line 185, ../sass/navigation.scss */
   #nav-togg {
     background-image: url(../images/icon-menu-2x.png);
     background-size: 16px 16px;
   }
 }
+/*
+ * Media queries
+ */
 
 /*# sourceMappingURL=navigation.css.map */

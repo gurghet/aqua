@@ -54,7 +54,7 @@
 }
 
 a.button { /* Buttons used by contrib modules like Media */
-  @include appearance(button);
+  // @include appearance(button); // WHY???
 }
 
 /*

@@ -314,7 +314,7 @@ function drupal_truncate_bytes($string, $len) {
  * @return string
  *   The truncated string.
  */
-function truncate_utf8($string, $max_length, $wordsafe = FALSE, $add_ellipsis = FALSE, $min_wordsafe_length = 1) {
+function truncate_utf8($string, $max_length, $wordsafe = FALSE, $add_ellipsis = TRUE, $min_wordsafe_length = 1) {
   $ellipsis = '';
   $max_length = max($max_length, 0);
   $min_wordsafe_length = max($min_wordsafe_length, 0);
