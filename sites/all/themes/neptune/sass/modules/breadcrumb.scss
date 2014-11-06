@@ -1,0 +1,27 @@
+@import "variables";
+
+.breadcrumb { /* The path to the current page in the form of a list of links */
+  position: absolute;
+  top: 0px;
+  background-color: $text-secondary-color !important;
+  li a {
+    color: lighten($text-secondary-color, 30%);
+    text-decoration: underline;
+    font-weight: 300;
+  }
+  li a:hover {
+      color: lighten($text-secondary-color, 20%);
+  }
+  color: white;
+  //border-bottom: $divider;
+  /*ol {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }*/
+}

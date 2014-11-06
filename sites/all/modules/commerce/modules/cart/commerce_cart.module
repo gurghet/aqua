@@ -2293,7 +2293,8 @@ function commerce_cart_add_to_cart_form_attributes_refresh($form, $form_state) {
     // First render the actual fields attached to the referenced product.
     foreach (field_info_instances('commerce_product', $product->type) as $product_field_name => $product_field) {
       // Rebuild the same array of classes used when the field was first rendered.
-      $replacement_class = drupal_html_class(implode('-', array($form_state['context']['class_prefix'], 'product', $product_field_name)));
+      //$replacement_class = drupal_html_class(implode('-', array($form_state['context']['class_prefix'], 'product', $product_field_name)));
+      $replacement_class = drupal_html_class($product_field_name);
 
       $classes = array(
         'commerce-product-field',
@@ -2311,8 +2312,8 @@ function commerce_cart_add_to_cart_form_attributes_refresh($form, $form_state) {
 
       // Append the prefix and suffix around existing values if necessary.
       $element += array('#prefix' => '', '#suffix' => '');
-      $element['#prefix'] = '<div class="' . implode(' ', $classes) . '">' . $element['#prefix'];
-      $element['#suffix'] .= '</div>';
+//      $element['#prefix'] = '<div class="' . implode(' ', $classes) . '">' . $element['#prefix'];
+//      $element['#suffix'] .= '</div>';
 
       $commands[] = ajax_command_replace('.' . $replacement_class, drupal_render($element));
     }

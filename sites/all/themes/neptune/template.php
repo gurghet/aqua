@@ -235,3 +235,11 @@ function neptune_status_messages($variables) {
   }
   return $output;
 }
+
+function neptune_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == "user_login_block") {
+    $form['links']['#markup'] = '<a href="/user/register">Регистрация</a>';
+    $form['name']['#title_display'] = 'invisible';
+    $form['pass']['#title_display'] = 'invisible';
+  }
+}

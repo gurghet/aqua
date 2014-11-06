@@ -404,6 +404,7 @@ function commerce_product_reference_entity_view($entity, $entity_type, $view_mod
                 drupal_html_class('commerce-product-field-' . $product_field_name),
                 drupal_html_class('field-' . $product_field_name),
                 drupal_html_class(implode('-', array($entity_type, $id, 'product', $product_field_name))),
+                // this last one in case of nodes becomes node-$id-product-field_name
               );
 
               // Add an extra class to distinguish empty product fields.
@@ -418,8 +419,9 @@ function commerce_product_reference_entity_view($entity, $entity_type, $view_mod
               );
 
               // Add the custom div before and after the prefix and suffix.
-              $entity->content[$content_key]['#prefix'] = '<div class="' . implode(' ', $classes) . '">' . $entity->content[$content_key]['#prefix'];
-              $entity->content[$content_key]['#suffix'] .= '</div>';
+              // HACK: actually stop with the divs, it's not cool man.
+              //$entity->content[$content_key]['#prefix'] = '<div class="' . implode(' ', $classes) . '">' . $entity->content[$content_key]['#prefix'];
+              //$entity->content[$content_key]['#suffix'] .= '</div>';
             }
           }
         }

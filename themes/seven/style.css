@@ -702,9 +702,6 @@ select.form-select {
   background: #fff;
   color: #333;
 }
-.form-item-field-category-und select.form-select {
-   height: 290px;
-}
 input.form-text:focus,
 input.form-file:focus,
 textarea.form-textarea:focus,

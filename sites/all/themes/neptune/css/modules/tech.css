@@ -1,0 +1,19 @@
+/* line 1, ../../sass/modules/tech.scss */
+.tech {
+  background-color: yellow;
+}
+/* line 3, ../../sass/modules/tech.scss */
+.tech h3 {
+  color: red;
+  font-size: 1.3em;
+}
+/* line 7, ../../sass/modules/tech.scss */
+.tech li {
+  color: blue;
+}
+/* line 10, ../../sass/modules/tech.scss */
+.tech span.field-label {
+  text-decoration: overline;
+}
+
+/*# sourceMappingURL=tech.css.map */

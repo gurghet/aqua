@@ -79,18 +79,6 @@
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
 
-  <script type="text/javascript">
-  WebFontConfig = { google: { families: [ 'Montserrat', 'Istok Web' ] } };
-  (function() {
-    var wf = document.createElement('script');
-    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })();
-  </script>
-
   <?php if ($default_mobile_metatags): ?>
     <meta name="MobileOptimized" content="width">
     <meta name="HandheldFriendly" content="true">

@@ -1,0 +1,423 @@
+@import "variables";
+
+/*
+ * Toolbar
+ */
+
+#toolbar {
+  box-shadow: none;
+}
+
+#page {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/*
+ * The skip-link link will be completely hidden until a user tabs to the link.
+ * See the element-focusable rule in system.base.css.
+ */
+
+#skip-link {
+  margin: 0;
+
+  a,
+  a:visited {
+    display: block;
+    width: 100%;
+    padding: 2px 0 3px 0;
+    text-align: center;
+    background-color: #666;
+    color: #fff;
+  }
+}
+
+/*
+ * Header
+ */
+ 
+@mixin aqua-input {
+  @media all and (min-width: 768px) {
+    padding: 0px;
+    width: 150px;
+    margin-right: 15px;
+    float: left;
+    height: 28px;
+    border-color: $text-secondary-color;
+    border-radius: 12px/8px;
+  }
+}
+
+@mixin aqua-submit {
+  float: left;
+  margin: 4px;
+  width: 70px;
+  margin: 0px;
+  height: 28px;
+  background-color: lighten($text-secondary-color, 10%);
+  padding-top: 0px;
+  color: white;
+  font-size: 17px;
+  font-weight: 300;
+  border-radius: 6px/9px;
+  border-color: $text-secondary-color;
+  @include box-shadow(-6px -6px 11px -2px rgba(48, 50, 50, 0.38) inset);
+}
+ 
+#edit-name {
+  @include aqua-input;
+}
+
+#edit-pass {
+  @include aqua-input;
+}
+
+#edit-submit {
+  @include aqua-submit;
+}
+
+#edit-search-block-form--2 {
+  @include aqua-input;
+}
+
+#edit-submit--2 {
+  @include aqua-submit;
+}
+
+#header {
+  padding: 0 0 40px 0;
+  text-align: left;
+  position: relative;
+  @media all and (min-width: 768px) {
+    padding: 20px 0 60px 0;
+    a {
+      text-decoration: underline;
+      font-weight: 300;
+      color: $text-secondary-color;
+      font-size: 17px;
+    }
+  }
+}
+
+#logo { /* Wrapping link for logo */
+  margin: 0;
+  padding: 0;
+
+  img {
+    vertical-align: bottom;
+  }
+  @media all and (min-width: 768px) {
+    float: left;
+    margin: 10px;
+  }
+}
+
+#block-block-1 { // cart link
+  height: 40px;
+  p {
+    padding: 0px;
+    margin: 0px;
+    top: 10px;
+    position: relative;
+  }
+  @media all and (min-width: 768px) {
+    margin: 5px;
+    text-indent: 50px;
+    background-image: url("http://aqua-c9-gurghet_1.c9.io/sites/default/files/corzina_03.png");
+    background-repeat: no-repeat;
+    background-position: 250px;
+  }
+}
+
+#site-name { /* The name of the website */
+  margin: 0;
+
+  a:link,
+  a:visited {
+    color: $body-bg;
+  }
+}
+
+#site-slogan { /* The slogan (or tagline) of a website */
+  margin: 10px 0 0 0;
+  font-size: 1.25em;
+  color: #4f4f4f;
+}
+
+#block-system-main-menu {
+    margin: 5px;
+    height: 40px;
+    text-align: left;
+    font-size: 12pt;
+    ul.menu {
+      margin: 0px;
+      li {
+        margin: 5px;
+      }
+    }
+  }
+
+#block-system-user-menu {
+  height: 40px;
+  margin: 5px;
+  text-align: left;
+  ul {
+    margin: 0px;
+  }
+  ul li {
+    margin: 5px;
+    display: inline-block;
+    font-size: 16px;
+    color: darken($body-bg, 30%);
+  }
+}
+
+#block-user-login {
+    margin: 5px;
+    height: 40px;
+    form {
+      position: relative;
+    }
+    .item-list {
+      position: absolute;
+      top: -56px;
+      left: 485px;
+      ul {
+        list-style-type: none;
+      }
+    }
+  }
+  
+  #block-search-form {
+    height: 40px;
+    margin: 5px;
+    form {
+      width: 650px;
+      margin: 0 auto;
+      .form-item {
+        width: 560px;
+      }
+    }
+  }
+  
+  #block-block-2 {
+    position: absolute;
+    left: 748px;
+    top: 44px;
+    width: 174px;
+    color: $text-secondary-color;
+    font-size: 23px;
+    font-style: italic;
+    font-weight: 300;
+  }
+  
+  /*
+ * Navigation bar
+ */
+
+#navigation.has-content {
+  padding: 20px;
+  overflow: hidden;
+  border: 1px dashed #d8d8d8;
+  border-top: none;
+}
+
+.lt-ie9 #navigation.has-content {
+  border-top: 1px dashed #d8d8d8;
+}
+
+#navigation {
+  #main-menu .links { /* The main menu created by code in page.tpl.php */
+    margin: 0;
+    padding: 0;
+  }
+
+  .block {
+    margin-bottom: 0;
+  }
+
+  .block-menu .block-title,
+  .block-menu-block .block-title {
+    @include element-invisible();
+  }
+
+  ul.links,
+  ul.menu {
+    margin: 0; /* Overwrite normalize.css */
+    padding: 0; /* Overwrite normalize.css */
+    text-align: left; /* LTR */
+
+    li {
+      list-style-type: none;
+      list-style-image: none;
+    }
+  }
+  ul.menu ul { /* Indent child menus */
+    padding: 0 0 0 20px;
+  }
+  li a {
+    display: block;
+    padding: 15px 10px;
+    border-bottom: 1px solid #d8d8d8;
+  }
+  li a.active {
+    color: #fff;
+    background: #3f3f3f;
+  }
+
+  li.last a { /* For the miniNav */
+    border: none;
+  }
+  li li.last a {
+    border-bottom: 1px solid #d8d8d8;
+  }
+  a:hover {
+    background: #f0f0f0;
+  }
+}
+
+/*
+ * Media queries
+ */
+
+@media all and (min-width: 768px) {
+  #navigation.has-content {
+    padding: 0;
+    border: none;
+  }
+  .lt-ie9 #navigation.has-content {
+    border-top: none;
+  }
+  #navigation {
+    ul.links,
+    ul.menu {
+      text-align: center;
+    }
+    ul.menu ul {
+      padding: 0;
+    }
+    li a {
+      padding: 12px 17px;
+      border-bottom: none;
+    }
+  }
+
+  /* The main menu created via code in page.tpl.php */
+  #main-menu li {
+    display: inline-block;
+  }
+
+  /* The main menu block */
+  #block-system-main-menu li {
+    display: inline-block;
+  }
+  #block-system-main-menu li ul {
+    float: left;
+  }
+  
+  /* The catalogue block */
+  #block-menu-menu-catalogue {
+    position: relative;
+    padding-bottom: 45px;
+    ul {
+      text-align: center;
+    }
+    li {
+      display: inline-block;
+      float: none;
+      font-size: large;
+      font-weight: 700;
+      position: static;
+      .active-trail {
+        background-color: $text-secondary-color;
+        border-radius: 4px;
+      }
+      a.active-trail {
+        color: white;
+      }
+      ul {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        li {
+          font-size: medium;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+/*
+ * #nav-togg (created by script.js)
+ */
+
+#nav-togg {
+  clear: left;
+  display: block;
+  padding: 15px 20px 15px 46px;
+  border: 1px dashed #d8d8d8;
+  background: url(../images/icon-menu.png) no-repeat 20px center;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  #nav-togg {
+    background-image: url(../images/icon-menu-2x.png);
+    background-size: 16px 16px;
+  }
+}
+  
+  /*
+ * Content
+ */
+
+#main {
+  position: relative;
+}
+
+#content {
+  top: 50px;
+  border-bottom: $divider;
+}
+
+#page-title {
+  display: none;
+}
+
+  
+#content {
+    padding: 80px 0 40px 0;
+  }
+  
+  /*
+ * Footer
+ */
+
+#footer {
+  padding: 40px 0;
+}
+  
+  /*
+ * Settings
+ */
+
+#edit-neptune-layout .form-item {
+  display: inline-block;
+  margin: 10px 40px 0 0;
+}
+
+#edit-neptune-layout label {
+  display: inline-block;
+  padding: 0 0 90px 0;
+  background: url(../images/layout-single.png) no-repeat left bottom;
+}
+
+#edit-neptune-layout label[for$=edit-neptune-layout-1] {
+  background-image: url(../images/layout-rside.png);
+}
+
+#edit-neptune-layout label[for$=edit-neptune-layout-2] {
+  background-image: url(../images/layout-lside.png);
+}
+

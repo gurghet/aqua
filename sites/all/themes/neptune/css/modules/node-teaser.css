@@ -1,0 +1,17 @@
+/* line 1, ../../sass/modules/node-teaser.scss */
+div.node-teaser {
+  width: 200px;
+  overflow: hidden;
+  height: 230px;
+  display: inline-block;
+}
+/* line 6, ../../sass/modules/node-teaser.scss */
+div.node-teaser .field-name-field-picture {
+  margin-bottom: 4px;
+}
+/* line 9, ../../sass/modules/node-teaser.scss */
+div.node-teaser .field-name-linker {
+  text-align: center;
+}
+
+/*# sourceMappingURL=node-teaser.css.map */

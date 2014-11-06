@@ -1,8 +1,9 @@
-@import "bootstrap-compass";
-@import "bootstrap-variables";
-@import "bootstrap";
+@import "variables";
 @import "base";
-@import "sassy-buttons";
+@import "layouts/page";
+@import "modules/tech";
+@import "modules/node-teaser";
+@import "modules/breadcrumb";
 
 /*
  * normalize.css specific overrides
@@ -18,25 +19,6 @@ textarea {
   @extend .form-control;
 }
 
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  //@extend .btn
-}
-
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-}
-
-button:active,
-input[type="button"]:active,
-input[type="reset"]:active,
-input[type="submit"]:active {
-}
-
 fieldset {
   margin: 20px 2px;
   border-color: #dfdfdf;
@@ -46,20 +28,7 @@ fieldset legend {
   font-weight: bold;
 }
 
-#block-system-user-menu {
-  height: 40px;
-  margin: 5px;
-  text-align: left;
-  ul {
-    margin: 0px;
-  }
-  ul li {
-    margin: 5px;
-    display: inline-block;
-    font-size: 16px;
-    color: darken($body-color, 30%);
-  }
-}
+
 
 .field-name-field-picture {
   text-align: center;
@@ -75,7 +44,7 @@ fieldset legend {
 .field-name-field-subtitle {
   font-size: 1.2em;
   font-weight: bold;
-  color: $titolo-color;
+  color: $text-secondary-color;
   margin-bottom: 8px;
 }
 
@@ -118,7 +87,7 @@ fieldset legend {
     font-size: 1.2em;
     font-weight: 200;
     text-transform: uppercase;
-    color: $titolo-color;
+    color: $text-secondary-color;
   }
   .field-items {
     margin-left: 25px;
@@ -129,7 +98,7 @@ fieldset legend {
 }
 
 .basic-cart-add-to-cart a.button {
-  @include sassy-button("simple", 10px, 12px, $titolo-color)
+  @include sassy-button("simple", 10px, 12px, $text-secondary-color)
 }
 
 .dim-title {
@@ -138,7 +107,7 @@ fieldset legend {
   font-size: 1.2em;
   display: inline-block;
   margin-left: 29px;
-  color: $titolo-color;
+  color: $text-secondary-color;
   margin-top: 15px;
 }
 

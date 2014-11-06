@@ -5,9 +5,6 @@
  * Add wireframes to the basic layout elements.
  */
 
-@import "base";
-
-
 .with-wireframes {
   #header,
   #main,
@@ -18,11 +15,5 @@
   #footer,
   .region-bottom {
     outline: 1px solid #aaa;
-
-    @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-      .lt-ie8 & {
-        border: 1px solid #ccc; /* IE6/7 do not support the outline property. */
-      }
-    }
   }
 }
