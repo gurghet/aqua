@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";AAAA,KAAM;EACF,gBAAgB,EAAE,MAAM;;;AACxB,QAAG;EACC,KAAK,EAAE,GAAG;EACV,SAAS,EAAE,KAAK;;;AAEpB,QAAG;EACC,KAAK,EAAE,IAAI;;;AAEf,sBAAiB;EACb,eAAe,EAAE,QAAQ",
-"sources": ["../../sass/modules/tech.scss"],
-"names": [],
-"file": "tech.css"
-}

@@ -624,7 +624,7 @@ function commerce_price_field_widget_form(&$form, &$form_state, $field, $instanc
     $default_currency_code = $items[$delta]['currency_code'];
   }
   else {
-    $default_amount = NULL;
+    $default_amount = '0';
   }
 
   // Load the default currency for this instance.

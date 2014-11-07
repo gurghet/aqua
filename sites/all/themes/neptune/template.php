@@ -237,9 +237,14 @@ function neptune_status_messages($variables) {
 }
 
 function neptune_form_alter(&$form, &$form_state, $form_id) {
-  if ($form_id == "user_login_block") {
-    $form['links']['#markup'] = '<a href="/user/register">Регистрация</a>';
+  if ($form_id == 'user_login_block') {
+    $form['links']['#markup'] = '<div id="edit-register"><a href="/user/register">Регистрация</a></div>';
     $form['name']['#title_display'] = 'invisible';
     $form['pass']['#title_display'] = 'invisible';
+    $form['actions']['submit']['#id'] = 'login-submit';
+  }
+  if ($form_id == 'search_block_form') {
+    $form['actions']['submit']['#id'] = 'search-submit';
+    $form['search_block_form']['#id'] = 'search-input';
   }
 }

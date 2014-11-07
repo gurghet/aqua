@@ -4,6 +4,8 @@
 @import "modules/tech";
 @import "modules/node-teaser";
 @import "modules/breadcrumb";
+@import "modules/sku";
+@import "modules/fields";
 
 /*
  * normalize.css specific overrides
@@ -41,13 +43,6 @@ fieldset legend {
   text-align: center;
 }
 
-.field-name-field-subtitle {
-  font-size: 1.2em;
-  font-weight: bold;
-  color: $text-secondary-color;
-  margin-bottom: 8px;
-}
-
 .field-name-field-code {
   font-size: 1.1em;
   margin-bottom: 5px;
@@ -71,27 +66,6 @@ fieldset legend {
 
 .field-name-field-additional-info {
   margin-bottom: 5px;
-  img {
-    @extend .big-circus
-  }
-}
-
-.field-name-field-technical-features {
-  margin-bottom: 5px;
-  .field-label {
-    background-image: url("http://aqua-c9-gurghet_1.c9.io/sites/default/files/Product_03.jpg");
-    height: 40px;
-    background-repeat: no-repeat;
-    text-indent: 46px;
-    padding-top: 8px;
-    font-size: 1.2em;
-    font-weight: 200;
-    text-transform: uppercase;
-    color: $text-secondary-color;
-  }
-  .field-items {
-    margin-left: 25px;
-  }
   img {
     @extend .big-circus
   }

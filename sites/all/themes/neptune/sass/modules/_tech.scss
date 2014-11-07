@@ -1,0 +1,16 @@
+@import "variables";
+
+ul.tech {
+    list-style-type: none;
+    h3 {
+        background-image: url("http://aqua-c9-gurghet_1.c9.io/sites/default/files/Product_03.jpg");
+        background-repeat: no-repeat;
+        height: 40px;
+        text-indent: 46px;
+        padding-top: 8px;
+        font-size: 1.2em;
+        font-weight: 200;
+        text-transform: uppercase;
+        color: $text-secondary-color;
+    }
+}

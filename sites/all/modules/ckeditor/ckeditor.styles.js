@@ -27,18 +27,17 @@ if(typeof(CKEDITOR) !== 'undefined') {
             { name : 'Address'			, element : 'address' },
             */
 
-            { name : 'Blue Title'		, element : 'h3', styles : { 'color' : 'Blue' } },
-            { name : 'Red Title'		, element : 'h3', styles : { 'color' : 'Red' } },
-            { name : 'Title'            , element : 'h3', styles : {
+            { name : 'Title'            , element : 'h4', styles : {
                 'color' : '#7571af',
                 'font-family' : 'sans-serif',
                 'font-weight' : '300',
                 'font-size'   : '18px'
             } },
-            { name : 'body'             , element : 'h3', styles : {
+            { name : 'body'             , element : 'h5', styles : {
                 'font-family' : 'sans-serif',
                 'font-weight' : '300',
                 'font-size'   : '16px',
+                'color'       : '#333'
             } },
 
             /* Inline Styles */

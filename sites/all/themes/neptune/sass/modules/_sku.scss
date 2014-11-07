@@ -1,0 +1,7 @@
+.commerce-product-sku-label {
+    display: none;
+}
+
+.commerce-product-sku:before {
+    content: 'Код: ';
+}

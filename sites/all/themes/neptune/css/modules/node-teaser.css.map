@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";AAAA,eAAgB;EACZ,KAAK,EAAE,KAAK;EACZ,QAAQ,EAAE,MAAM;EAChB,MAAM,EAAE,KAAK;EACb,OAAO,EAAE,YAAY;;;AACrB,yCAA0B;EACxB,aAAa,EAAE,GAAG;;;AAEpB,kCAAmB;EACjB,UAAU,EAAE,MAAM",
-"sources": ["../../sass/modules/node-teaser.scss"],
-"names": [],
-"file": "node-teaser.css"
-}
