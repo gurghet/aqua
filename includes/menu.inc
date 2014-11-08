@@ -1050,7 +1050,6 @@ function menu_tree_output($tree) {
     // Set a class if the link is in the active trail.
     if ($data['link']['in_active_trail']) {
       $class[] = 'active-trail';
-      $class[] = 'active';
       $data['link']['localized_options']['attributes']['class'][] = 'active-trail';
     }
     // Normally, l() compares the href of every link with $_GET['q'] and sets
@@ -2496,6 +2495,7 @@ function menu_link_get_preferred($path = NULL, $selected_menu = NULL) {
     $query->addField('ml', 'weight', 'link_weight');
     $query->fields('m');
     $query->condition('ml.link_path', $path_candidates, 'IN');
+    $query->addTag('preferred_menu_links');
 
     // Sort candidates by link path and menu name.
     $candidates = array();
