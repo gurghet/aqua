@@ -4362,7 +4362,7 @@ tbody.collapse.in {
 body {
   margin: 0;
   padding: 0;
-  background-image: url("http://aqua-c9-gurghet_1.c9.io/sites/default/files/sfondo-top.png");
+  background-image: url("../images/sfondo-top.png");
   background-size: 1400px;
   background-position: 77% -169px;
   background-repeat: repeat-x;
@@ -4593,7 +4593,7 @@ div.error {
   #block-block-1 {
     margin: 5px;
     text-indent: 50px;
-    background-image: url("http://aqua-c9-gurghet_1.c9.io/sites/default/files/corzina_03.png");
+    background-image: url("../images/corzina_03.png");
     background-repeat: no-repeat;
     background-position: 250px;
   }
